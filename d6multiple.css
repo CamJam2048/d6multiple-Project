@@ -1,0 +1,147 @@
+
+body {
+	background-color: #000010;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+	font-weight: bold;
+	width: 100%;
+	margin-right: 1em;
+	padding: 1em;
+	font-size: 120%;
+	text-align: center;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	display: inline-block;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 0 10px;
+}
+
+nav a{
+	display: block;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #000000;
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #00C4FF;
+}
+
+nav b{
+	display: block;
+	padding: 20px;
+	border-radius: 10px;
+	border: 1px solid #000000;
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #FF10F0;
+}
+
+
+nav a {text-decoration: none;}
+nav b {text-decoration: none;}
+
+nav a:link {color: #FFFFFF;}
+nav b:link {color: #FFFFFF;}
+
+nav a:visited {color: #FFFFFF;}
+nav b:visited {color: #FFFFFF;}
+
+nav a:hover {background-color: #FF10F0;}	
+nav b:hover {background-color: #FFFFFF; color: #FF10F0;}
+
+
+h2 a, aa{
+	color: #FF10F0; 
+	font-family: Arial, Helvetica, sans-serif;
+	}
+	
+
+h2 aa {
+	display: flex;
+	justify-content: center;
+	margin-left: 20%;
+	margin-right: 35%;
+}
+
+h3 a {
+	display: flex;
+	justify-content: left;
+	color: #FFFFFF;
+	margin-right: 20px;
+}
+
+h3 aa {
+	display: flex;
+	justify-content: center;
+	color: #FFFFFF;
+	margin-left: 20%;
+}
+
+
+
+footer {
+	font-size: 75%;
+	padding: 2em;
+	font-style: italic;
+	text-align: center;
+	background-color:  #000010;
+	color: #ff10f0;
+	font-family: Georgia, "Times new Roman", sans-serif;
+}
+
+.screen-border {
+	width: 100%;
+	border-top: 3px solid #FFFFFF;
+}
+
+.container {
+	overflow: hidden;
+}
+
+.right-image {
+	display: block;
+	float: right;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 50%;
+}
+
+.text-left {
+	overflow: hidden;
+}
+
+.left-image {
+	display: block;
+	float: left;
+	margin-top: 5em;
+	margin-bottom: 2em;
+	margin-left: 1em;
+	margin-right: 0;
+	width: 50%;
+}
+
+.text-right {
+	overflow: hidden;
+}
+
+
+/*Image for home page*/
+/*CURRENT IMAGE IS A PLACEHOLDER FOR TESTING*/
+#homehero {
+	height: 400px;
+	background-image: url(40kBanner.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	}
+	
