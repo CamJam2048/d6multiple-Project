@@ -37,7 +37,7 @@ nav a{
 	background-color: #00C4FF;
 }
 
-nav b{
+.home-button{
 	display: block;
 	padding: 20px;
 	border-radius: 10px;
@@ -48,17 +48,14 @@ nav b{
 }
 
 
-nav a {text-decoration: none;}
-nav b {text-decoration: none;}
-
 nav a:link {color: #FFFFFF;}
-nav b:link {color: #FFFFFF;}
+.home-button:link {color: #FFFFFF;}
 
 nav a:visited {color: #FFFFFF;}
-nav b:visited {color: #FFFFFF;}
+.home-button:visited {color: #FFFFFF;}
 
 nav a:hover {background-color: #FF10F0;}	
-nav b:hover {background-color: #FFFFFF; color: #FF10F0;}
+.home-button:hover {background-color: #FFFFFF; color: #FF10F0;}
 
 
 h2 a, aa{
@@ -131,13 +128,151 @@ footer {
 	width: 50%;
 }
 
+.KillTeam-left-image {
+	display: block;
+	float: left;
+	margin-top: 5em;
+	margin-bottom: 2em;
+	margin-left: 2em;
+	margin-right: 2em;
+	width: 40%;
+}
+
+
 .text-right {
 	overflow: hidden;
 }
 
+.KillTeam-text-right {
+	overflow: hidden;
+	margin-left: 1em;
+}
 
-/*Image for home page*/
-/*CURRENT IMAGES ARE PLACEHOLDERS FOR TESTING*/
+
+
+/****************************/
+/*Dice roll page code block*/
+/**************************/
+#myAttacks,
+#myTarget,
+#myMod{
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	width: 75px;
+}
+
+.dice {
+	width: 100px;
+	height: 100px;
+	background-color: var(white);
+	border-radius: 10%;
+	padding: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.dot {
+	display: block; 
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: black;
+}
+
+
+/******************************/
+/*End of Dice roll code block*/
+/****************************/
+
+
+
+/********************/
+/*Table code blocks*/
+/******************/	
+table {
+	border: 3px solid #000000;
+	border-collapse: collapse;
+}	
+
+
+td, th {
+	padding: 0.5em;
+	border: 3px solid #000000;
+}
+
+
+td {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+tr:nth-of-type(odd) {
+	background-color: #00C4FF;
+}
+
+tr:nth-of-type(even){
+	background-color: #FFFFFF;
+}
+
+tr:nth-child(1) {
+	color: #FFFFFF;
+	background-color: #FF10F0;
+}	
+
+.highlight{
+	color: #FF10F0;
+}
+/**************************/
+/*End of table code block*/
+/************************/
+
+
+
+/***************************/
+/*Start of Form code block*/
+/*************************/
+form {
+	margin-left: 3em;
+	margin-right: 3em;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	width: 100%;
+	max-width: 30em;
+	display: grid;
+	grid-gap: 1em;
+	grid-template-columns: 6em 1fr;
+}
+
+label {
+	color: #FFFFFF;
+}
+
+input, textarea {
+	margin-bottom: .5em;
+}
+
+#myFName, 
+#myLName, 
+#myEmail,
+#myArmy {
+	width: 250px;
+}
+
+#myComments {
+	width: 350px;
+	height: 100px;
+}
+/*************************/
+/*End of Form code block*/
+/***********************/
+
+
+
+/************************/
+/*Code to format images*/
+/**********************/
 .image-container {
 	position: relative;
 }
@@ -159,4 +294,12 @@ footer {
 	background-repeat: no-repeat;
 }
 
-	
+.KillTeam-image {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 50%;
+}
+/*******************************/
+/*End of image formatting code*/
+/*****************************/

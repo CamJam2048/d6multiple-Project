@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--HEAD SECTION FOR META DATA-->
+<head>
+	<title>Warhammer Dice Roller</title>
+	<meta charset="utf-8">
+	<link href="d6multiple.css" rel="stylesheet" >
+</head>
+
+<!--BODY SECTION-->
+<body>
+
+<!--WIP BANNER IMAGE AND LOGO-->
+<div class="image-container">
+	<img src="logo.jpg" class="overlay-image">
+	<br><br><br><br><br>
+</div>
+
+<br>
+<div class="screen-border"></div>
+
+<!--HEADER NAV SECTION-->
+<nav>
+	<ul>
+	<li><a href="40kRules.html">Warhammer 40,000<br>Core Rules</a></li>
+	<li><a href="40kDice.html">Warhammer 40,000<br>Dice</a></li>
+	<li><a href="index.html" class="home-button">Home</a></li>
+	<li><a href="KillTeamDice.html">Kill Team<br>Dice</a></li>
+	<li><a href="KillTeamRules.html">Kill Team<br>Core Rules</a></li>
+	</ul>
+</nav>
+
+<div class="screen-border"></div>
+<br>
+
+<!--MAIN SECTION FOR BODY TEXT-->
+<main>
+
+<label for="myAttacks"># of Attacks:</label>
+<input type="text" min="1" id="myAttacks" required>
+
+<label for="myTarget">BS/WS:</label>
+<input type="text" min="1" id="myTarget" required>
+
+<label for="myMod">+/- Modifier:</label>
+<input type="text" min="0" max="1" id="myMod">
+<button onclick="40kDiceRoll()">Roll</button>
+
+<div id="diceContainer">
+	<div class="dice"></div>
+</div>
+
+<button id="40kDiceRoll">Roll Dice</button>
+
+
+</main>
+
+<br>
+<div class="screen-border"></div>
+
+
+<!--FOOTER NAV SECTION-->
+<nav>
+	<ul>
+	<li><a href="40kRules.html">Warhammer 40,000<br>Core Rules</a></li>
+	<li><a href="40kDice.html">Warhammer 40,000<br>Dice</a></li>
+	<li><a href="index.html" class="home-button">Home</a></li>
+	<li><a href="KillTeamDice.html">Kill Team<br>Dice</a></li>
+	<li><a href="KillTeamRules.html">Kill Team<br>Core Rules</a></li>
+	</ul>
+</nav>
+
+<div class="screen-border"></div>
+<br>
+
+<!--FOOTER SECTION WITRH COPYRIGHT AND MEDIA-->
+<footer>
+	Copyright &copy 2025 40k Dice Roller<br>
+	<a href= "cbthoma5@asu.edu">cbthoma5@asu.edu</a>
+</footer>
+
+</body>
+</html>

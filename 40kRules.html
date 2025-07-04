@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--HEAD SECTION FOR META DATA-->
+<head>
+	<title>Warhammer Dice Roller</title>
+	<meta charset="utf-8">
+	<link href="d6multiple.css" rel="stylesheet" >
+</head>
+
+<!--BODY SECTION-->
+<body>
+
+<!--WIP BANNER IMAGE AND LOGO-->
+<div class="image-container">
+	<img src="logo.jpg" class="overlay-image">
+	<img src="40kRulesBanner.jpg" class="background-image">
+</div>
+
+<br>
+<div class="screen-border"></div>
+
+<!--HEADER NAV SECTION-->
+<nav>
+	<ul>
+	<li><a href="40kRules.html">Warhammer 40,000<br>Core Rules</a></li>
+	<li><a href="40kDice.html">Warhammer 40,000<br>Dice</a></li>
+	<li><a href="index.html" class="home-button">Home</a></li>
+	<li><a href="KillTeamDice.html">Kill Team<br>Dice</a></li>
+	<li><a href="KillTeamRules.html">Kill Team<br>Core Rules</a></li>
+	</ul>
+</nav>
+
+<div class="screen-border"></div>
+<br>
+
+<!--MAIN SECTION FOR BODY TEXT-->
+<main>
+
+<div class="container">
+
+
+<img src="40kPhases.jpg" class="right-image">	
+
+<div class="text-left">
+	<h2><a>Core Mechanics</a></h2>
+		<h3><a>Warhammer 40k tabletop generally centers around two players taking 
+		turns strategically battling one another in a tabletop environment. 
+		This website will help with expediting the Shooting, Charge, and Fight phases. It is also possible to utilize the 
+		dice roll system to roll for units advancing during the Movement phase 
+		as well where one dice is rolled and that value is added to a unit's total 
+		movement, IE. a die value of 3, will add 3 inches of movement.
+		<br><br>
+		An example of a players starts with the Command Phases, where the player
+		whose turn it is will have options for giving orders to their units or 
+		other special abilities for specific units. The player will then move into
+		the Movement phase where they will move their models around the tabletop
+		based off their unit's movement speed, IE. 6" or 12". Then the player will
+		enter the shooting phase, there are many rules regarding eligble targets for
+		shooting and it really comes down to what the players agree is a valid attack.
+		This is the first phase where this website can really help with depending on
+		how many attacks are being made. After all shooting is done, the player will 
+		then select units to make charges to try and enter into melee range with enemy
+		units. This phase relies on two dice being rolled for a maximum of 12 inches of
+		movement. After all charges are completed the player will then select units that 
+		are in engagement range (1 inch away) with enemy models. This phase works similarily
+		to the shooting phase. After the fight phase, the player can then move models up to 
+		3 inches either to further encircle enemy models, or towards an objective point. 
+		The players turn is now finished and the opposing player begins their turn following
+		these same phases.
+		</a></h3>
+	</div>	
+</div>
+
+<br>
+<div class="screen-border"></div>
+<br>
+
+<div class="container">
+	
+<div class="text-right">
+	<h2><aa>Additional Examples</aa></h2>
+		<h3><a>Warhammer 40k can be a very confusing game at first glance with a lot of rules
+		and things going on. However, it is not super complicated. The best way to learn, is 
+		to have fun and play the game! <br><br>When attacking, the attacking player will
+		first roll to see if their attack hits. The value to determine a successful hit
+		is found on the attacking unit's datacard and will either be BS(Ballistic Score) for 
+		shooting, or WS(Weapon Score) for fighting. The BS or WS value for an attack is taken
+		from the weapons that are being used for the attack. In addition to these values,
+		weapons also have an AP(Armor Piercing) value which will make the attack more difficult
+		to save from when the defending player is rolling.<br><br>The table below shows what dicve values are needed for
+		a successful attack depending on the strength and toughness stats of units involved.
+		A dice roll of 1 is always a failure, and a roll of 6 is always a success. This rule
+		does not always apply to saves, but this exemption is dependant on the other player as
+		making an imnpossible roll is sometimes exciting. The values for unit strength and toughness
+		can be found on the specific unit's datacard. The strength value of the attacking unit is
+		then compared to the toughness of the unit being attacked. </a></h3>
+		
+	</div>
+	
+<table>
+<!--TABLE HEADER COLUMNS-->
+	<tr>
+		<th>Attack's Strength VS Target's Toughness</th>
+		<th>D6 Result Required</th>
+	</tr>	
+<!--TABLE BODY COLUMNS-->	
+	<tr>
+		<td>Always a <span class="highlight">FAIL</span></td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>Strength is <span class="highlight">TWICE (or more than twice)</span><br> the Toughness</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>Strength is <span class="highlight">GREATER</span><br>than the Toughness</td>
+		<td>3</td>
+	</tr>
+	<tr>
+		<td>Strength is <span class="highlight">EQUAL</span> to the Toughness</td>
+		<td>4</td>
+	</tr>
+	<tr>
+		<td>Strength is <span class="highlight">LESS</span><br> than the Toughness</td>
+		<td>5</td>
+	</tr>
+	<tr>
+		<td>Strength is <span class="highlight">HALF (or less than half)</span><br>than the Toughness</td>
+		<td>6</td>
+	</tr>
+</table>
+	
+</div>
+
+</main>
+
+<br>
+<div class="screen-border"></div>
+<br>
+
+
+<form method="post" action="https://webdevbasics.net/scripts/pacific.php">
+	<label for="myFName">First Name:</label>
+	<input type="text" id="myFName" name="myFName" required>
+	
+	<label for="myLName">Last Name:</label>
+	<input type="text" id="myLName" name="myLName" required>
+	
+	<label for="myEmail">E-mail:</label>
+	<input type="text" id="myEmail" name="myEmail" required>
+	
+	<label for="myArmy">Army/Faction:</label>
+	<input type="text" id="myArmy" name="myArmy">		
+	
+	<label for="myComments">Comments:</label>
+	<textarea id="myComments" name="myComments" rows="2" cols="30"></textarea>
+
+	<button type="submit">Submit</button>
+</form>
+
+<br>
+<div class="screen-border"></div>
+
+<!--FOOTER NAV SECTION-->
+<nav>
+	<ul>
+	<li><a href="40kRules.html">Warhammer 40,000<br>Core Rules</a></li>
+	<li><a href="40kDice.html">Warhammer 40,000<br>Dice</a></li>
+	<li><a href="index.html" class="home-button">Home</a></li>
+	<li><a href="KillTeamDice.html">Kill Team<br>Dice</a></li>
+	<li><a href="KillTeamRules.html">Kill Team<br>Core Rules</a></li>
+	</ul>
+</nav>
+
+<div class="screen-border"></div>
+<br>
+
+<!--FOOTER SECTION WITRH COPYRIGHT AND MEDIA-->
+<footer>
+	Copyright &copy 2025 40k Dice Roller<br>
+	<a href= "cbthoma5@asu.edu">cbthoma5@asu.edu</a>
+</footer>
+
+</body>
+</html>
