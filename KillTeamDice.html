@@ -34,6 +34,7 @@
 <div class="screen-border"></div>
 <br>
 
+
 <!--MAIN SECTION FOR BODY TEXT-->
 <main>
 
@@ -45,13 +46,11 @@
 
 <label for="myMod">+/- Modifier:</label>
 <input type="text" min="0" max="1" id="myMod">
-<button onclick="40kDiceRoll()">Roll</button>
+<button id="roll-button">Roll Dice</button>
 
-<div id="diceContainer">
-	<div class="dice"></div>
-</div>
+<div id="dice-container"></div>
 
-<button id="40kDiceRoll">Roll Dice</button>
+<script src="dice.js"></script>
 
 
 </main>

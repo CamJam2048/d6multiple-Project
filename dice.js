@@ -1,43 +1,54 @@
 //JavaScript functions for calculating the  dice rolls
 
-function 40kDiceGenerator()
-{
-	// Setting variables to be used for generating dice
-	const dice = document.querySelector(".dice");
-	const rollValue = Math.floor(Math.random() *6 + 1;
-	dice.innerHTML = "";
-	
-	// Assigning the die color for successful or failed rolls
-	const colors = ["#00C4FF", "FF10F0"];
-	dice.style.backgroundColor = colors[rollValue - 1];
-	
-	
-	// Building the layout of different die values
-	const dotLayouts = {
-		1: [{gridArea: 'five'}],
-		2: [{gridArea: 'one'}, {gridArea: 'nine'}],
-		3: [{gridArea: 'three'}, {gridArea: 'five'}, {gridArea: 'seven'}],
-		4: [{gridArea: 'one'}, {gridArea: 'three'}, {gridArea: 'seven'}, 
-				{gridArea: 'nine'}],
-		5: [{gridArea: 'one'}, {gridArea: 'three'}, {gridArea: 'seven'}, 
-				{gridArea: 'five'}, {gridArea: 'nine'}], 
-		6: [{gridArea: 'one'}, {gridArea: 'three'}, {gridArea: 'four'},
-				{gridArea: 'six'}, {gridArea: 'seven'}, {gridArea: 'nine'}],
-	};
-	
+const rollButton = document.getElementById('roll-button');
+const diceImage = document.getElementById('dice-image');
 
-	const dots = dotLayouts[rollValue];
-	if(dots) 
+rollButton.addEventListener('click', rollDice);
+
+
+function rollDice() 
+{	
+	let attacksNumber = document.getElementById('myAttacks').value;
+	let diceTarget = document.getElementById('myTarget').value;
+	let diceContainer = document.getElementById('dice-container');
+	diceContainer.innerHTML='';
+	
+	var posabilities = [1,2,3,4,5,6];
+	
+	
+	for(let i=0; i < attacksNumber; i++)
 	{
-		dots.forEach(dotPosition => {
-		const dot = document.createElement("span");
-		dot.classLIst.add("dot");
-		dot.style.gridArea = dotPosition.gridArea;
-		dice.appendChild(dot);
-		});
-	}		
-
-	console.log("Rolled: " + rollvalue);
+		let index = Math.floor(Math.random() * posabilities.length);
+		let win = winCalc(posabilities[index], diceTarget);
+		
+		let imageElement = document.createElement('img');
+		
+		
+		imageElement.class = 'dice-image';
+		imageElement.id = 'dice-image';
+		imageElement.src = `assets/die${posabilities[index]}${win}.jpg`; 
+		imageElement.alt = 'Dice';
+		
+		
+		diceContainer.appendChild(imageElement);
+	}
+	
 }
 
-document.getElementById("dice").addEventListener("click", 40kDiceGenerator);
+
+function winCalc(diceRoll, diceTarget)
+{
+	if([1,6].includes(diceRoll))
+	{
+		return '';
+	}
+	else if(diceRoll < diceTarget)
+	{
+		return 'L';
+	}
+	else
+	{
+		return 'W';
+	}
+}
+
